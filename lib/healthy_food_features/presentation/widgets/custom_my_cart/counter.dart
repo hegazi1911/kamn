@@ -18,7 +18,6 @@ class _CounterState extends State<Counter> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          // زر ناقص
           IconButton(
             icon: Icon(
               Icons.remove,
@@ -28,19 +27,17 @@ class _CounterState extends State<Counter> {
             ),
             onPressed: () {
               setState(() {
-                counter--; // تقليل الرقم
+                counter--;
               });
             },
           ),
-          // الرقم المعروض في المنتصف
           Text(
-            '$counter', // عرض الرقم الحالي
+            '$counter',
             style: TextStyle(
                 fontSize: 18.sp,
                 fontWeight: FontWeight.w500,
                 color: Color(0xff205B2A)),
           ),
-          // زر زائد
           IconButton(
             icon: Icon(
               Icons.add,
@@ -50,7 +47,7 @@ class _CounterState extends State<Counter> {
             ),
             onPressed: () {
               setState(() {
-                counter++; // زيادة الرقم
+                counter++;
               });
             },
           ),

@@ -59,9 +59,7 @@ class MyCartScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 20),
                       child: SvgPicture.asset("assets/icons/delete.svg"),
                     ),
-                    onDismissed: (direction) {
-                      // تنفيذ الحذف أو التعديل هنا
-                    },
+                    onDismissed: (direction) {},
                     child: const CardMycart(),
                   ),
                 );
